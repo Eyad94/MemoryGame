@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    tools:context="com.eyad.memorygame.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/username_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="40dp"
+            android:text="Enter your user name and age:"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/username_textbox"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/username_textview"
+            android:layout_marginTop="118dp"
+            android:background="#8888"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="16dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/age_textbox"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/username_textview"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="180dp"
+            android:background="#8888"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="numberDecimal"
+            android:textSize="16dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/startgame_button"
+            android:layout_width="125dp"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="170dp"
+            android:text="START GAME" />
+
+
+        <Button
+            android:id="@+id/results_button"
+            android:layout_width="125dp"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:text="Results" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MemoryGame</string>
+    <string name="btn1Click">Go To Map</string>
+    <string name="btn2Click">Go To Table</string>
+</resources>
